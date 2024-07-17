@@ -1,0 +1,10 @@
+{
+    "name": "dikewonsi/workopia-php",
+    "description": "Job Listing Portal",
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "Framework/",
+            "App\\": "App/"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<?php
+
+    namespace App\Controllers;
+
+    class ErrorController
+    {
+        //404 Not Found Error
+        public static function notFound($message = 'Resource not Found')
+        {
+            http_response_code(404);
+
+    
+            loadView('error', [
+                'status' => '404',
+                'message' => $message
+            ]);
+        }
+
+        //403 Unauthorized Error
+        public static function unauthorized($message = 'Access Forbidden')
+        {
+            http_response_code(403);
+
+    
+            loadView('error', [
+                'status' => '403',
+                'message' => $message
+            ]);
+        }
+    }
